@@ -1,0 +1,12 @@
+.panel{
+    display: inline-block;
+    width:100%;
+    border:1px solid gray;
+}
+.pl-circle{
+    border-radius: 20px;
+}
+.pl-half{
+    width:50%;
+
+}
