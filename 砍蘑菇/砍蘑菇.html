@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <style>
+
+    body{
+        background:url(./img/back.jpg) no-repeat;
+       background-size:100% 100%; /* 给body设置背景图片的时候,就算是设置了宽高,图片也会超越body的高度,只有给背景图设置100%才能让背景图填充body */
+        border:1px solid red;
+    }
+    div{
+        display: inline-block;
+    }
+ 
+    .axe{
+        margin-left:500px;
+        margin-top:50px;
+        margin-bottom:300px;/* 给斧头设置底部距离能撑大body的高度 */
+        transform:rotate(-15deg);
+        transform-origin:34px 463px;
+        transition:0.6s ease-in;
+        cursor: pointer;
+        
+    }
+    .mushroom{
+        transition:0.1s ease-out 0.4s;
+    }
+    .axe:active{
+        transform:rotate(42deg);
+    }
+    .axe:active +.mushroom{
+        transform:scale(0.5,0.5) translate(300px,0) rotate(30deg);
+    }
+    .text{
+        width: 100px;height:100px;
+        position: absolute;
+        left:1200px;top:100px;
+        background: rgb(236, 203, 17);
+        border-radius:50%;
+        font:36px "droid sans";
+        transition: 0.1s ease-out 0.4s;
+        opacity: 0;
+        
+    }
+
+    .axe:active~.text{
+        transform:translate(-100px,250px) rotate(22deg);
+        opacity: 1;
+    }
+
+
+    </style>
+</head>
+
+<body>
+   <div class="axe"><img src="./img/axe.png"/></div>
+   <div class="mushroom"><img src="./img/mushroom.png"/></div>
+   <div class="text">你砍不到我,嘿嘿!</div>
+</body>
+</html>
