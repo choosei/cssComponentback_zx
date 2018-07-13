@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+.parent{
+	margin-top: 200px;
+margin-left:500px;
+width:600px;
+
+position:relative;
+}
+img{
+	width:600px;
+height:300px;
+}
+.parent>div{
+width:600px;
+height:300px;
+backface-visibility:hidden;
+transition:2s;
+}
+.parent>div:nth-child(1){
+	
+background-color:silver;
+transform:rotatey(180deg);
+}
+.parent>div:nth-child(2){
+	
+position:absolute;
+top:0;
+left:0;
+}
+.parent:hover div:nth-child(2){
+ transform:rotatey(180deg);
+} 
+.parent:hover div:nth-child(1){
+ transform:rotatey(0deg);
+} 
+
+
+</style>
+</head>
+<body>
+		
+<div class="parent">
+<div>
+	<table border="0" cellspacing="0" cellpadding="10" >
+				<tr><th colspan="4">个人资料</th></tr>
+				
+				<tr><td>昵称:</td>
+					<td>云幻星辰</td>
+				    <td>姓名:</td>
+					<td>郎双双</td>
+				</tr>
+				<tr><td>民族:</td>
+				<td>汉</td>
+				<td>故乡:</td>
+				<td>四川达州</td>
+				</tr>
+				<tr><td>星座:</td>
+					<td>天秤座</td>
+				
+				  <td>职业:</td>
+					<td>学生</td></tr>
+				<tr><td colspan="2">学校:</td>
+					<td colspan="2">电子科技大学成都学院</td>
+				</tr>
+		
+			</table></div>
+<div><img src="img/ab.jpg"/></div>
+</div>
+
+
+</body>
+</html>
+	
