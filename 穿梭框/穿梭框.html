@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>穿搜框</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        label::before{
+            content:"";
+            display: inline-block;
+            width:1em;height:1em;
+            line-height: 0.6em;
+            text-indent: 0.1em;
+           
+        }
+        input{
+            display: none;
+        }
+        input:checked + label::before{
+            content:"\2713";
+            background: skyblue;
+
+        }
+    </style>
+</head>
+<body>
+    <input id="ch" type="checkbox" name="city">
+    <label for="ch">上海</label>
+    
+</body>
+</html>

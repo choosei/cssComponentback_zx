@@ -1,0 +1,10 @@
+/* 公用的样式文件 */
+.ulTOHorizontal{
+    list-style: none;
+}
+.ulTOHorizontal>li{
+    display: inline-block;
+}
+.fontcolorwhite{
+    color:white;
+}
