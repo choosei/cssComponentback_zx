@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+
+/*  默认为移动端样式（移动端优先）  */
+@media screen and (max-width:768px){
+   nav{
+   position:relative;
+   }
+   ul{ 
+   list-style:none; padding-left:0; text-align:center;
+   position:absolute;
+   top:1.5em;
+   width:100%;
+   display:none;
+   }
+   ul>li{
+    background-color:blue;
+   }
+   menu{
+	 position:absolute;
+	 top:0;
+	 right:0;
+	 margin:0px auto;
+	 text-align:center;
+	 background-color:gray;
+	 padding-left:0;
+	 padding:0px 20px;
+   }
+   menu:hover + ul{
+   display:block;
+   opacity:0.9;
+   }
+}
+   
+   /* 非移动端响应式【比如pc端】  */
+@media screen and (min-width:768px){
+   ul{ list-style:none; padding-left:0; }
+   ul>li{ display:inline-block;}
+   .logo{ float:left;}
+   ul{ float:right; margin:0px auto;}
+   nav:after{
+    content:"";
+	display:block;
+	clear:both;
+   }
+   menu{
+     display:none;
+	 position:absolute;
+	 top:0;
+	 right:0;
+   }
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo"> logo </div>
+<menu>菜单</menu>
+ <ul>
+ <li>导航1</li>
+ <li>导航2</li>
+ <li>导航3</li>
+ <li>导航4</li>
+ <li>导航5</li>
+ <li>导航6</li>
+ </ul>
+</nav>
+</header>
+<main>
+
+内容
+
+</main>
+</body>
+
+</html>

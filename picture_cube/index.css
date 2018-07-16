@@ -1,0 +1,100 @@
+body{
+    background:url(./image/back.jpg) no-repeat ;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1200;
+    
+}
+.wrap {
+    width: 200px;
+    height: 200px;
+    margin:400px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    animation:rotatestyle 6s linear infinite;
+}
+
+.wrap div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    opacity: 0.7;
+    background-size:200px 200px;
+    border:1px blue solid;
+    transition: 5s;
+
+   
+    
+}
+@keyframes rotatestyle{
+    0% {transform:rotateX(0) rotatey(0);}
+    100% {transform:rotateX(360deg) rotatey(360deg);}
+   
+
+}
+@keyframes part{
+    0% {}
+    100% {transform:rotate(100deg);}
+   
+
+}
+
+.wrap:hover{
+    animation:part 10s linear infinite;
+    
+}   
+.wrap:hover div{
+    border-radius: 50%;
+    box-shadow:5px -5px 1px white,-5px 5px 1px white,-5px -5px 1px white,5px 5px 1px white,5px -5px 1px white inset,-5px 5px 1px white inset,-5px -5px 1px white inset,5px 5px 1px white inset;
+    
+}
+
+
+.wrap:hover .front{
+    transform:translate(200px,200px) scale(0.9);
+}
+.wrap:hover .bottom{
+    transform:translate(-200px,-200px) scale(0.9);
+}
+.wrap:hover .back{
+    transform:translate(200px,-200px) scale(0.9);
+}
+.wrap:hover .top{
+    transform:translate(-200px,200px) scale(0.9);
+}
+.wrap:hover .left{
+    transform:translate(0,-200px) scale(0.9);
+}
+.wrap:hover .right{
+    transform:translate(0,200px) scale(0.9);
+}
+
+
+.front {
+    background:url(./image/1.jpg) no-repeat;
+    transform: translateZ(100px);
+}
+
+.bottom {
+    background: url(./image/2.jpg) no-repeat;
+    transform: rotateX(90deg) translateZ(-100px);
+}
+
+.back {
+    background: url(./image/2.jpg) no-repeat;
+    transform: translateZ(-100px);
+}
+
+.top {
+    background: url(./image/4.jpg) no-repeat;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.left {
+    background: url(./image/5.jpg) no-repeat;
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+    background:url(./image/6.jpg)  no-repeat;
+    transform: rotateY(90deg) translateZ(100px);
+}

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>导航栏</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="nav.css" />
+	<style>
+		/*移动端*/
+
+		@media screen and (max-width:687px) {
+			header .div1 {
+				display: none;
+			}
+			.button {
+				width: 100px;
+				height: 100px;
+				border: 1px solid black;
+				float: right;
+				cursor: pointer;
+
+
+			}
+
+
+			.button:hover+.list {
+				display: block;
+
+			}
+			.list{
+				display:none;
+				position: absolute;
+				top:10em;
+				width:100%;
+				border:1px red solid;
+				text-align: center;
+			}
+
+		}
+
+		/*pc端*/
+
+		@media screen and (min-width:687px) {
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			a {
+				text-decoration: none;
+				color: #000;
+			}
+
+			.div1:hover {
+				background: rgb(9, 24, 238);
+
+			}
+
+			.div1:hover a {
+				color: #fff;
+				font-weight: bold;
+
+			}
+
+			.logo {
+				background: url(logo.png);
+				width: 160px;
+				height: 51px;
+				float: left;
+
+			}
+			div.div1 {
+				float: right;
+				margin-left: 10px;
+				cursor: pointer;
+				width: 120px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+
+			}
+
+			p {
+				clear: both;
+			}
+	
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="logo"></div>
+		<div class="div1">
+			<a href="http://www.baidu.com">导航1</a>
+		</div>
+		<div class="div1">
+			<a href="http://www.baidu.com">导航2</a>
+		</div>
+		<div class="div1">
+			<a href="http://www.baidu.com">导航3</a>
+		</div>
+		<div class="div1">
+			<a href="http://www.baidu.com">导航4</a>
+		</div>
+		<div class="div1">
+			<a href="http://www.baidu.com">导航5</a>
+		</div>
+		<div class="div1">
+			<a href="http://www.baidu.com">导航6</a>
+		</div>
+
+	</header>
+
+	<div class="button"></div>
+
+</body>
+
+</html>

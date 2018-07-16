@@ -1,0 +1,70 @@
+body{
+    transform-style: preserve-3d;
+    /* 让子元素的动画都有3d效果 */
+}
+
+.wrap {
+    width: 200px;
+    height: 200px;
+    border:1px solid red;
+    top:200px;
+    left:500px;
+    position: relative;
+    transform-style: preserve-3d;
+    /* 动起来有3d效果就在父盒子放一个transform-style:preserve-3d */
+  
+    /* 让盒子停止的时候有3d效果就用perspective,但是要加上-webkit-才能出效果; */
+    animation:rotatestyle 6s infinite alternate;
+    /* 让父盒子旋转 */
+}
+
+.wrap div {
+    width: 200px;
+    height: 200px;
+    border:1px black solid;
+    position: absolute;
+    text-align: center; 
+    line-height: 200px;
+    transition: 5s;
+    opacity: 0.5;
+    /* animation:backgroundstyle 2s 1s alternate both; */
+    /* 让子盒子背景色透明 */
+}
+@keyframes rotatestyle{
+    from{}
+    to {transform:rotateX(-360deg) rotateY(-1000deg);}
+}
+
+@keyframes backgroundstyle{
+    from{}
+    to {background:transparent;}
+}
+
+.wrap:hover .front {
+    background: red;
+    transform: translateZ(100px);
+}
+
+.wrap:hover .bottom {
+    background: rgb(18, 221, 11);
+    transform: rotateX(90deg) translateZ(-100px);
+}
+
+.wrap:hover .back {
+    background: rgb(74, 21, 219);
+    transform: translateZ(-100px);
+}
+
+.wrap:hover .top {
+    background: rgb(221, 11, 169);
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.wrap:hover .left {
+    background: rgb(181, 241, 16);
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.wrap:hover .right {
+    background: rgb(238, 5, 75);
+    transform: rotateY(90deg) translateZ(100px);

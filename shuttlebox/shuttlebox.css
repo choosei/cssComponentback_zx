@@ -1,0 +1,16 @@
+label:before{
+    content:"";
+    display: inline-block;
+    width:1em;height:1em;
+    line-height: 0.6em;
+    text-indent: 0.1em;
+   
+}
+input{
+    display: none;
+}
+input:checked + label:before{
+    content:"\2713";
+    background: skyblue;
+
+}
