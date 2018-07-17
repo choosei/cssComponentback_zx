@@ -1,0 +1,113 @@
+body{
+    background: rgb(202, 202, 202);
+    color: #fff;
+}
+.mainTitle{
+    font-weight: bolder;
+    font-size: 150%;
+}
+.main{
+    text-align: center;
+    margin:5% auto;
+    
+}
+.main>div{
+    margin:0 auto;
+    margin-top:40px;
+    position: relative;
+}
+
+
+
+.inputstyle{
+    width:70%;height:50px;
+    line-height:50px;
+    border:1px solid black;
+    border-radius:10px;
+    text-align: center;
+  
+
+}
+.inputstyle a{
+    text-decoration: none;
+    color:#fff;
+}
+.inputstyle img{
+    height:20px;
+    line-height:50px;
+    position: absolute;
+    left:10%;
+    top:15px;
+
+}
+.inputcontent{
+    border:none;
+    outline:none;
+    background: rgb(202, 202, 202);
+    text-align: center;
+    background: transparent;
+}
+/*给placeholder的提示文字换颜色,必须加webkit*/
+.inputcontent::-webkit-input-placeholder{ 
+    color:#eee;
+    
+}
+
+.mainLoading{
+    background: #0881BF;
+}
+.mainRegister{
+    background: #08BE87;
+}
+.mainbottm{
+    display: inline-block;
+    padding:1%;
+    margin-top:0px;
+    
+}
+.mainbottm a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.mainLook{
+    border-right:1px  #fff solid;
+}
+.qq,.weibo,.otherloading{
+    display: inline-block;
+    padding-right:1%;
+    
+
+}
+.weibo img{
+    width:45px;height:45px;
+}
+@media screen and (max-width:414px) {
+    body{
+        background: skyblue;
+    }
+
+}
+@media screen and (min-width:414px){
+    body{
+        background: rgb(235, 182, 6);
+    }
+    main>div{
+        margin:0 auto;
+        margin-top:50px;
+    }
+}
+
+@media screen and (min-width:415px)  {
+    body{
+        background: rgb(129, 106, 233);
+    }
+    main.inputstyle{
+        width:800px;height:50px;
+        line-height:50px;
+        border:1px solid black;
+        border-radius:10px;
+        text-align: center;
+    }
+
+}

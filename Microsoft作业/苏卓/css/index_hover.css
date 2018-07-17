@@ -1,0 +1,51 @@
+header ul:nth-child(2) a:hover {
+    border-bottom: 2px solid #000;
+}
+header ul:nth-child(3) a:hover {
+    color: #0067B8;
+}
+header ul:nth-child(3) i:hover {
+    color: rgb(0, 0, 0);
+}
+.topDiv:hover {
+    border-left: 1px dotted rgb(0, 0, 0);
+    border-right: 1px dotted rgb(0, 0, 0);
+
+    cursor: pointer;
+}
+.topDiv:hover span {
+    border-bottom: 1px solid #fff;
+}
+.Cnt_Div:hover {
+    cursor: pointer;
+}
+.Cnt_Div:hover .but_left,
+.Cnt_Div:hover .but_right {
+    display: block;
+}
+.but_left:hover {
+    background-color: rgb(255, 255, 255);
+}
+.but_left:hover i {
+    color: rgb(0, 0, 0);
+}
+.but_right:hover {
+    background-color: rgb(255, 255, 255);
+}
+.but_right:hover i {
+    color: rgb(0, 0, 0);
+}
+.Box_1 div:hover {
+    cursor: pointer;
+}
+.wechat img:hover {
+    cursor: pointer;
+}
+.tfoot_ul a:hover {
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+.tfoot_ul_li a:hover,.China a:hover {
+    border-bottom: 1px solid #000;
+    color: #000;
+}
